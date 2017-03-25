@@ -32,18 +32,18 @@ class Song
     # iterate over arr
       # count total number of instances for each genre
       # return results in a hash {genre: genre_count}
-    result = {}
+    genre_count = {}
     self.genres.each do |genre|
       result[genre] = @@genres.count(genre)
     end
-    result
+    genre_count
   end
 
   def self.artist_count
-    result = {}
+    artist_count = {}
     self.artists.each do |artist|
       result[artist] = @@artists.count(artist)
     end
-    result
+    artist_count
   end
 end
